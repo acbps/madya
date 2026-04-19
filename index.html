@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
 :root {
   --navy: #0B1F4A;
   --teal: #0D6E6E;
@@ -20,16 +20,16 @@
   --muted: #6B748A;
   --border: #E2E8F0;
 }
- 
+
 html { scroll-behavior: smooth; }
- 
+
 body {
   font-family: 'DM Sans', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
- 
+
 /* NAVBAR */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0;
@@ -44,23 +44,9 @@ body {
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .navbar-brand {
-  display: flex; align-items: center; gap: 10px;
+  display: flex; align-items: center; gap: 12px;
   text-decoration: none;
 }
-.navbar-logo {
-  width: 32px; height: 32px;
-  background: var(--teal-light);
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 16px;
-}
-.navbar-name {
-  font-size: 14px;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 0.01em;
-}
-.navbar-name span { color: var(--accent); }
 .nav-links {
   display: flex; gap: 4px;
   list-style: none;
@@ -78,7 +64,7 @@ body {
   color: #fff;
   background: rgba(255,255,255,0.08);
 }
- 
+
 /* TICKER */
 .ticker-wrap {
   position: fixed; top: 60px; left: 0; right: 0;
@@ -103,7 +89,7 @@ body {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
- 
+
 /* HERO */
 .hero {
   min-height: 100vh;
@@ -191,7 +177,7 @@ body {
   transition: border-color 0.2s, background 0.2s;
 }
 .btn-outline:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); }
- 
+
 /* STATS */
 .stats {
   background: var(--navy);
@@ -207,7 +193,7 @@ body {
   font-size: 32px; color: var(--accent);
 }
 .stat-label { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 2px; }
- 
+
 /* SECTIONS */
 section { padding: 80px 24px; }
 .container { max-width: 900px; margin: 0 auto; }
@@ -231,7 +217,7 @@ section { padding: 80px 24px; }
   margin-bottom: 40px;
   line-height: 1.7;
 }
- 
+
 /* JADWAL */
 #jadwal { background: var(--white); }
 .jadwal-card {
@@ -263,7 +249,7 @@ section { padding: 80px 24px; }
   transition: background 0.2s;
 }
 .btn-drive:hover { background: var(--teal); }
- 
+
 /* MATERI */
 #materi { background: var(--bg); }
 .materi-card {
@@ -294,7 +280,7 @@ section { padding: 80px 24px; }
 .materi-info p { font-size: 13px; color: var(--muted); }
 .materi-arrow { color: var(--muted); font-size: 18px; }
 .grid-list { display: flex; flex-direction: column; gap: 12px; }
- 
+
 /* REKAMAN */
 #rekaman { background: var(--white); }
 .rekaman-card {
@@ -330,7 +316,7 @@ section { padding: 80px 24px; }
   transition: background 0.2s;
 }
 .btn-yt:hover { background: #CC0000; }
- 
+
 /* EVALUASI */
 #evaluasi { background: var(--bg); }
 .eval-card {
@@ -356,7 +342,7 @@ section { padding: 80px 24px; }
   transition: transform 0.15s, box-shadow 0.2s;
 }
 .btn-eval:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,197,71,0.4); }
- 
+
 /* TENTANG */
 #tentang { background: var(--white); }
 .tentang-grid {
@@ -380,7 +366,7 @@ section { padding: 80px 24px; }
 }
 .tentang-highlight h4 { color: var(--accent); }
 .tentang-highlight p { color: rgba(255,255,255,0.7); }
- 
+
 /* KONTAK */
 #kontak { background: var(--bg); }
 .kontak-grid {
@@ -404,7 +390,7 @@ section { padding: 80px 24px; }
 }
 .kontak-detail h4 { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
 .kontak-detail p { font-size: 13px; color: var(--muted); line-height: 1.5; }
- 
+
 /* FOOTER */
 footer {
   background: var(--navy);
@@ -414,10 +400,10 @@ footer {
   font-size: 13px;
 }
 footer span { color: var(--accent); }
- 
+
 /* DIVIDER */
 .divider { height: 1px; background: var(--border); }
- 
+
 @media (max-width: 640px) {
   .navbar { padding: 0 16px; }
   .nav-links { display: none; }
@@ -430,12 +416,12 @@ footer span { color: var(--accent); }
 </style>
 </head>
 <body>
- 
+
 <!-- NAVBAR -->
 <nav class="navbar">
   <a class="navbar-brand" href="#">
-    <div class="navbar-logo">🏛</div>
-    <div class="navbar-name">Assessment Center <span>BPS</span></div>
+    <img src="LOGO AC BPS.png" alt="Logo AC BPS" style="height:36px; width:auto;">
+    <img src="logo bps.png" alt="Logo BPS" style="height:36px; width:auto;">
   </a>
   <ul class="nav-links">
     <li><a href="#jadwal">Jadwal</a></li>
@@ -446,7 +432,7 @@ footer span { color: var(--accent); }
     <li><a href="#kontak">Kontak</a></li>
   </ul>
 </nav>
- 
+
 <!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker-inner">
@@ -456,7 +442,7 @@ footer span { color: var(--accent); }
     <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 22 April – 4 Mei 2026</span>
   </div>
 </div>
- 
+
 <!-- HERO -->
 <section class="hero" id="beranda">
   <div class="hero-dots"></div>
@@ -470,7 +456,7 @@ footer span { color: var(--accent); }
     </div>
   </div>
 </section>
- 
+
 <!-- STATS -->
 <div class="stats">
   <div class="stat">
@@ -486,7 +472,7 @@ footer span { color: var(--accent); }
     <div class="stat-label">Tahun Pelaksanaan</div>
   </div>
 </div>
- 
+
 <!-- JADWAL -->
 <section id="jadwal">
   <div class="container">
@@ -504,9 +490,9 @@ footer span { color: var(--accent); }
     </div>
   </div>
 </section>
- 
+
 <div class="divider"></div>
- 
+
 <!-- MATERI -->
 <section id="materi">
   <div class="container">
@@ -526,9 +512,9 @@ footer span { color: var(--accent); }
     </div>
   </div>
 </section>
- 
+
 <div class="divider"></div>
- 
+
 <!-- REKAMAN -->
 <section id="rekaman">
   <div class="container">
@@ -546,9 +532,9 @@ footer span { color: var(--accent); }
     </div>
   </div>
 </section>
- 
+
 <div class="divider"></div>
- 
+
 <!-- EVALUASI -->
 <section id="evaluasi">
   <div class="container">
@@ -563,9 +549,9 @@ footer span { color: var(--accent); }
     </div>
   </div>
 </section>
- 
+
 <div class="divider"></div>
- 
+
 <!-- TENTANG -->
 <section id="tentang">
   <div class="container">
@@ -596,22 +582,22 @@ footer span { color: var(--accent); }
     </div>
   </div>
 </section>
- 
+
 <div class="divider"></div>
- 
+
 <!-- KONTAK -->
 <section id="kontak">
   <div class="container">
     <div class="section-tag">Kontak</div>
     <h2 class="section-title">Hubungi Kami</h2>
-    <p class="section-desc">Ada pertanyaan? Hubungi kami melalui kontak berikut.</p>
+    <p class="section-desc">Ada pertanyaan? Hubungi panitia asesmen melalui kontak berikut.</p>
     <div class="kontak-grid">
       <div class="kontak-card">
         <div class="kontak-icon-wrap">📧</div>
         <div class="kontak-detail">
           <h4>Email</h4>
           <!-- Ganti dengan email panitia -->
-          <p>asesmen@bps.go.id</p>
+          <p>panitia@bps.go.id</p>
         </div>
       </div>
       <div class="kontak-card">
@@ -639,155 +625,11 @@ footer span { color: var(--accent); }
     </div>
   </div>
 </section>
- 
+
 <!-- FOOTER -->
 <footer>
   <p>© 2026 <span>Assessment Center BPS</span> · Badan Pusat Statistik · All rights reserved.</p>
 </footer>
- 
-</body>
-</html>    margin-bottom: 18px;
-  }
-  .hero h1 {
-    font-size: clamp(22px, 5vw, 34px);
-    font-weight: 800;
-    color: #fff;
-    line-height: 1.25;
-    margin-bottom: 10px;
-  }
-  .hero h1 span { color: #5DCAA5; }
-  .hero p {
-    color: rgba(255,255,255,0.6);
-    font-size: 13.5px;
-    margin-top: 10px;
-  }
-
-  .ticker-wrap {
-    background: #1A9E80;
-    overflow: hidden;
-    padding: 11px 0;
-    width: 100%;
-  }
-  .ticker-inner {
-    display: flex;
-    width: max-content;
-    animation: marquee 22s linear infinite;
-  }
-  .ticker-inner span {
-    font-size: 13.5px;
-    font-weight: 600;
-    color: #fff;
-    padding: 0 80px;
-    white-space: nowrap;
-  }
-  @keyframes marquee {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
-  .btn-list {
-    max-width: 620px;
-    margin: 0 auto;
-    padding: 32px 20px 60px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-  .btn-row {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    border: 1.5px solid #E2E8F0;
-    border-radius: 100px;
-    padding: 14px 14px 14px 28px;
-    gap: 12px;
-    text-decoration: none;
-    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
-  }
-  .btn-row:hover {
-    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
-    transform: translateY(-1px);
-    border-color: #1A9E80;
-  }
-  .btn-label {
-    flex: 1;
-    font-size: 16px;
-    font-weight: 600;
-    color: #1A1F2E;
-  }
-  .btn-label em { font-style: italic; font-weight: 500; }
-  .btn-cta {
-    background: #1A9E80;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 0.06em;
-    padding: 10px 22px;
-    border-radius: 100px;
-    white-space: nowrap;
-    flex-shrink: 0;
-    transition: background 0.2s;
-  }
-  .btn-row:hover .btn-cta { background: #0B6E58; }
-
-  footer {
-    text-align: center;
-    padding: 16px;
-    font-size: 12px;
-    color: #9AA5B4;
-  }
-
-  @media (max-width: 480px) {
-    .btn-label { font-size: 14px; }
-    .btn-row { padding: 12px 12px 12px 20px; }
-    .btn-cta { padding: 8px 16px; font-size: 11px; }
-  }
-</style>
-</head>
-<body>
-
-<div class="hero">
-  <div class="hero-content">
-    <div class="hero-badge">Assessment Center BPS</div>
-    <h1>Asesmen <span>Jabatan Fungsional</span><br>Ahli Madya</h1>
-    <p>Akses materi, rekaman, dan evaluasi kegiatan melalui tautan di bawah ini.</p>
-  </div>
-</div>
-
-<div class="ticker-wrap">
-  <div class="ticker-inner">
-    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 22 April – 4 Mei 2026</span>
-    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 22 April – 4 Mei 2026</span>
-    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 22 April – 4 Mei 2026</span>
-    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 22 April – 4 Mei 2026</span>
-  </div>
-</div>
-
-<div class="btn-list">
-
-  <a class="btn-row" href="LINK_GOOGLE_DRIVE_JADWAL" target="_blank">
-    <span class="btn-label">Jadwal Asesmen</span>
-    <span class="btn-cta">KLIK DI SINI</span>
-  </a>
-
-  <a class="btn-row" href="LINK_GOOGLE_DRIVE_MATERI" target="_blank">
-    <span class="btn-label">Materi Briefing</span>
-    <span class="btn-cta">KLIK DI SINI</span>
-  </a>
-
-  <a class="btn-row" href="LINK_YOUTUBE_REKAMAN" target="_blank">
-    <span class="btn-label">Rekaman <em>Briefing</em> (YouTube)</span>
-    <span class="btn-cta">KLIK DI SINI</span>
-  </a>
-
-  <a class="btn-row" href="LINK_GOOGLE_FORM_EVALUASI" target="_blank">
-    <span class="btn-label">Evaluasi Asesmen <em>(Feedback)</em></span>
-    <span class="btn-cta">KLIK DI SINI</span>
-  </a>
-
-</div>
-
-<footer>Assessment Center BPS</footer>
 
 </body>
 </html>
