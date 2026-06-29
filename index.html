@@ -257,7 +257,13 @@ section { padding: 80px 24px; }
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 22px 24px;
-  display: flex; align-items: center; gap: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
   text-decoration: none;
   transition: box-shadow 0.2s, transform 0.15s;
   color: inherit;
@@ -275,10 +281,10 @@ section { padding: 80px 24px; }
   font-family: 'DM Serif Display', serif;
   font-size: 18px;
 }
-.materi-info { flex: 1; }
+.materi-info { flex: 1; min-width: 0; }
 .materi-info h3 { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 3px; }
 .materi-info p { font-size: 13px; color: var(--muted); }
-.materi-arrow { color: var(--muted); font-size: 18px; }
+.materi-arrow { color: var(--muted); font-size: 18px; flex-shrink: 0; }
 .grid-list { display: flex; flex-direction: column; gap: 12px; }
 
 /* REKAMAN */
