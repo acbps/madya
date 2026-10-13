@@ -257,13 +257,7 @@ section { padding: 80px 24px; }
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 22px 24px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 16px;
-  width: 100%;
-  box-sizing: border-box;
+  display: flex; align-items: center; gap: 16px;
   text-decoration: none;
   transition: box-shadow 0.2s, transform 0.15s;
   color: inherit;
@@ -281,10 +275,10 @@ section { padding: 80px 24px; }
   font-family: 'DM Serif Display', serif;
   font-size: 18px;
 }
-.materi-info { flex: 1; min-width: 0; }
+.materi-info { flex: 1; }
 .materi-info h3 { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 3px; }
 .materi-info p { font-size: 13px; color: var(--muted); }
-.materi-arrow { color: var(--muted); font-size: 18px; flex-shrink: 0; }
+.materi-arrow { color: var(--muted); font-size: 18px; }
 .grid-list { display: flex; flex-direction: column; gap: 12px; }
 
 /* EVALUASI */
@@ -379,7 +373,7 @@ footer span { color: var(--accent); }
   .nav-links { display: none; }
   .stats { gap: 32px; padding: 24px 16px; }
   .tentang-grid { grid-template-columns: 1fr; }
-  .jadwal-card, .rekaman-card { flex-direction: column; align-items: flex-start; }
+  .jadwal-card { flex-direction: column; align-items: flex-start; }
   .eval-card { padding: 32px 20px; }
   section { padding: 60px 16px; }
 }
@@ -396,7 +390,6 @@ footer span { color: var(--accent); }
   <ul class="nav-links">
     <li><a href="#jadwal">Jadwal</a></li>
     <li><a href="#materi">Materi</a></li>
-    <li><a href="#rekaman">Rekaman</a></li>
     <li><a href="#evaluasi">Evaluasi</a></li>
     <li><a href="#tentang">Tentang</a></li>
     <li><a href="#kontak">Kontak</a></li>
@@ -406,10 +399,10 @@ footer span { color: var(--accent); }
 <!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker-inner">
-    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 15 - 20 Oktober 2026</span>
-    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 15 - 20 Oktober 2026</span>
-    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 15 - 20 Oktober 2026</span>
-    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 15 - 20 Oktober 2026</span>
+    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 2 - 6 Juli 2026</span>
+    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 2 - 6 Juli 2026</span>
+    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 2 - 6 Juli 2026</span>
+    <span>📢 Pelaksanaan asesmen madya akan dimulai dari tanggal 2 - 6 Juli 2026</span>
   </div>
 </div>
 
@@ -430,11 +423,11 @@ footer span { color: var(--accent); }
 <!-- STATS -->
 <div class="stats">
   <div class="stat">
-    <div class="stat-num">15 Oktober</div>
+    <div class="stat-num">2 Juli</div>
     <div class="stat-label">Mulai Asesmen</div>
   </div>
   <div class="stat">
-    <div class="stat-num">20 Oktober</div>
+    <div class="stat-num">6 Juli</div>
     <div class="stat-label">Selesai Asesmen</div>
   </div>
   <div class="stat">
@@ -455,7 +448,7 @@ footer span { color: var(--accent); }
         <h3>Jadwal Asesmen Ahli Madya 2026</h3>
         <p>Jadwal lengkap tersedia di Google Drive. Klik tombol di bawah untuk mengakses.</p>
         <!-- Ganti href dengan link Google Drive jadwal -->
-        <a class="btn-drive" href="https://docs.google.com/spreadsheets/d/1tk6U33Vn9e3dEUMoYlVjJUK5CFcNU4R-ly0QDHZ2l50/edit?usp=sharing">Buka Jadwal →</a>
+        <a class="btn-drive" href="https://docs.google.com/spreadsheets/d/1tV1ncOKPpQE7Qja2Rq7sKqjq2aKls_0sUkl57j7IDBI/edit?usp=sharing">Buka Jadwal →</a>
       </div>
     </div>
   </div>
@@ -471,7 +464,7 @@ footer span { color: var(--accent); }
     <p class="section-desc">Pelajari materi briefing sebelum mengikuti asesmen. Semua dokumen tersedia di Google Drive.</p>
     <div class="grid-list">
       <!-- Ganti setiap href dengan link Google Drive masing-masing materi -->
-      <a class="materi-card" href="https://docs.google.com/presentation/d/17dSxHewS_6Ln_ZI0CrOr6gE08Gv3Dbs3/edit?usp=drive_link&ouid=106112899291212980915&rtpof=true&sd=true" target="_blank">
+      <a class="materi-card" href="https://drive.google.com/drive/folders/1gp5NaRlgO_S3Rnd9pXqRwRIo0qThV0W4?usp=sharing" target="_blank">
         <div class="materi-info">
           <h3>Materi Briefing Asesmen Ahli Madya</h3>
           <p>Dokumen materi lengkap — Google Drive</p>
@@ -482,25 +475,6 @@ footer span { color: var(--accent); }
   </div>
 </section>
 
-<div class="divider"></div>
-  
-<!-- REKAMAN -->
-<section id="rekaman">
-  <div class="container">
-    <div class="section-tag">Rekaman</div>
-    <h2 class="section-title">Rekaman Briefing</h2>
-    <p class="section-desc">Tonton ulang rekaman sesi briefing yang telah berlangsung melalui YouTube.</p>
-    <div class="rekaman-card">
-      <div class="yt-icon"></div>
-      <div class="rekaman-info">
-        <h3>Rekaman Briefing Asesmen Ahli Madya</h3>
-        <p>Rekaman sesi briefing tersedia di YouTube. Klik tombol untuk menonton.</p>
-        <!-- Ganti href dengan link YouTube -->
-        <a class="btn-yt" href="https://www.youtube.com/watch?v=MnYgG2o2Bmc" target="_blank">Tonton di YouTube →</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <div class="divider"></div>
 
@@ -546,7 +520,7 @@ footer span { color: var(--accent); }
       <div class="tentang-item">
         <div class="icon">📅</div>
         <h4>Jadwal Pelaksanaan</h4>
-        <p>Asesmen dilaksanakan pada <strong>15 - 20 Oktober 2026</strong>. Pastikan Anda telah mempelajari seluruh materi briefing sebelum pelaksanaan.</p>
+        <p>Asesmen dilaksanakan pada <strong>22 April – 4 Mei 2026</strong>. Pastikan Anda telah mempelajari seluruh materi briefing sebelum pelaksanaan.</p>
       </div>
     </div>
   </div>
